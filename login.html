@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>로그인</title>
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <!-- 슬릭슬라이더 -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- 초기화css -->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- 메인css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- jQuery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- 슬릭슬라이더 js -->
+    <script src="js/slick.min.js"></script>
+    <!-- 메인js -->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- 탑버튼 -->
+        <a class="to_top_btn" href="#a"><span></span></a>
+
+        <!-- 헤더 -->
+
+        <div class="login_gnb">
+            <div class="login_gnb_inner">
+                <div class="login_gnb_left">
+                    <button class="go_back" onclick="history.back()"><span class="hide">뒤로가기버튼</span></button>
+                    <button class="go_home" type="button" onclick="window.location.href='index.html'"><span
+                            class="hide">홈버튼</span></button>
+                </div>
+                <div class="login_gnb_center">
+                    <h1>로그인</h1>
+                </div>
+                <div class="login_gnb_right">
+                    <button class="login_more"><span class="hide">nav더보기</span></button>
+                    <button class="mo_nav_button"><span class="hide">더보기</span></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 헤더 -->
+
+
+        <div id="container">
+            <!-- 컨텐츠 시작 -->
+            <div class="login_box">
+                <div class="login_box_inner">
+                    <ul>
+                        <li><a href="#member_login_tap"><span>회원 로그인</span></a></li>
+                        <li><a href="#Reservation_inquiry"><span>예약조회<br><em>(여행사/예약센터/공항)</em></span></a></li>
+                    </ul>
+                    <div id="member_login_tap">
+                        <form id="member_login" method="post" name="loginform">
+                            <fieldset>
+                                <legend>로그인</legend>
+                                <div class="form">
+                                    <div class="form_layout">
+                                        <div class="form_label">
+                                            <label for="login_id">아이디</label>
+                                        </div>
+                                        <div class="form_value">
+                                            <input type="text" id="login_id" placeholder="아이디를 입력하세요">
+                                        </div>
+                                    </div>
+                                    <div class="form_layout">
+                                        <div class="form_label">
+                                            <label for="login_pwd">비밀번호</label>
+                                        </div>
+                                        <div class="form_value">
+                                            <input type="password" id="login_pwd" placeholder="비밀번호를 입력하세요">
+                                        </div>
+                                    </div>
+                                    <div class="id_save">
+                                        <input type="checkbox" id="id_save">
+                                        <label for="id_save">아이디 저장</label>
+                                        <input type="checkbox" id="auto_login">
+                                        <label for="auto_login">자동 로그인</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="join_login">
+                            <a href="#a" class="join_login_btn" role="button"><span>로그인</span></a>
+                        </div>
+                        <div class="phone_login">
+                            <a href="#a" class="phone_login_btn" role="button"><span>
+                                    <img src="img/phone_login.png" alt="모바일로그인이미지">
+                                </span></a>
+                        </div>
+                        <div class="sns_login">
+                            <ul class="sns_login_list">
+                                <li>로그인</li>
+                                <li><a href="#a"><span>카카오톡</span></a></li>
+                                <li><a href="#a"><span>네이버</span></a></li>
+                                <li><a href="#a"><span>페이스북</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="nonmember_login">
+                            <a href="#a"><span>비회원 로그인</span></a>
+                        </div>
+                        <div class="join_membership">
+                            <ul class="join_membership_list">
+                                <li><a href="#a"><span>회원가입</span></a></li>
+                                <li><a href="#a"><span>아이디 찾기</span></a></li>
+                                <li><a href="#a"><span>비밀번호 찾기</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="login_nav_slide">
+                        <div class="login_nav_slide_inner">
+                            <div class="login_nav_tit">
+                                <ul>
+                                    <li><a href="#airline">항공권 예매</a></li>
+                                    <li><a href="#my_rent">나의 예약</a></li>
+                                    <li><a href="#service_guide">서비스 안내</a></li>
+                                    <li><a href="#online_free">온라인 면세점</a></li>
+                                    <li><a href="#event">이벤트</a></li>
+                                    <li><a href="#Customer">고객센터</a></li>
+                                    <li><a href="#alliance">제휴</a></li>
+                                </ul>
+                            </div>
+                            <div class="login_nav_cont">
+                                <div id="airline">
+                                    <ul class="dep_list">
+                                        <li><a href="#a" role="button"><span>항공권 예매</span></a></li>
+                                        <li><a href="#a" role="button"><span>이벤트/프로모션</span></a></li>
+                                        <li><a href="#a" role="button"><span>운임 및 수수료 안내</span></a></li>
+                                    </ul>
+                                </div>
+                                <div id="my_rent">
+                                    <ul class="dep_list">
+                                        <li><a href="#a" role="button"><span>예약 조회</span></a></li>
+                                        <li><a href="#a" role="button"><span>온라인 체크인</span></a></li>
+                                        <li><a href="#a" role="button"><span>부가서비스 추가 구매</span></a></li>
+                                    </ul>
+                                </div>
+                                <div id="service_guide">
+                                    <ul class="dep_list">
+                                        <li>
+                                            <a href="#a" role="button" class="dep_btn"><span>여행준비</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>항공권 예매 안내</span></a></li>
+                                                <li><a href="#a" role="button"><span>단체 항공권 예매 안내</span></a></li>
+                                                <li><a href="#a" role="button"><span>온라인 체크인 안내</span></a></li>
+                                                <li><a href="#a" role="button"><span>가족동반여행</span></a></li>
+                                                <li><a href="#a" role="button"><span>도움이 필요한 고객</span></a></li>
+                                                <li><a href="#a" role="button"><span>혼자 여행하는 어린이</span></a></li>
+                                                <li><a href="#a" role="button"><span>t’pet(반려동물 동반 여행)</span></a></li>
+                                                <li><a href="#a" role="button"><span>t’way 라운지</span></a></li>
+                                                <li><a href="#a" role="button"><span>티웨이페이</span></a></li>
+                                                <li><a href="#a" role="button"><span>코로나 19 종합안내</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#a" role="button" class="dep_btn"><span>항공편 및 공항정보</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>항공편 및 공항정보</span></a></li>
+                                                <li><a href="#a" role="button"><span>운항 스케줄 조회</span></a></li>
+                                                <li><a href="#a" role="button"><span>출도착 조회</span></a></li>
+                                                <li><a href="#a" role="button"><span>도심 공항 안내</span></a></li>
+                                                <li><a href="#a" role="button"><span>셀프 체크인 안내</span></a></li>
+                                                <li><a href="#a" role="button"><span>탑승 수속 안내</span></a></li>
+                                                <li><a href="#a" role="button"><span>공항 카운터 정보</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#a" role="button" class="dep_btn"><span>부가서비스</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>부가서비스 번들</span></a></li>
+                                                <li><a href="#a" role="button"><span>프리미엄 좌석 구매</span></a></li>
+                                                <li><a href="#a" role="button"><span>수하물 추가 구매</span></a></li>
+                                                <li><a href="#a" role="button"><span>기내식 사전 주문</span></a></li>
+                                                <li><a href="#a" role="button"><span>결제시한연장 서비스</span></a></li>
+                                                <li><a href="#a" role="button"><span>옆좌석 구매</span></a></li>
+                                                <li><a href="#a" role="button"><span>펫 케이스/포장용 비닐 구매</span></a></li>
+                                                <li><a href="#a" role="button"><span>t'care 서비스</span></a></li>
+                                                <li><a href="#a" role="button"><span>원클릭 여행자보험</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#a" role="button" class="dep_btn"><span>수하물 안내</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>무료 수하물</span></a></li>
+                                                <li><a href="#a" role="button"><span>특수 수하물</span></a></li>
+                                                <li><a href="#a" role="button"><span>운송 제한 물품</span></a></li>
+                                                <li><a href="#a" role="button"><span>수하물 배상</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#a" role="button" class="dep_btn"><span>기내 서비스</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>무료 수하물</span></a></li>
+                                                <li><a href="#a" role="button"><span>특수 수하물</span></a></li>
+                                                <li><a href="#a" role="button"><span>운송 제한 물품</span></a></li>
+                                                <li><a href="#a" role="button"><span>수하물 배상</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="online_free">
+                                    <ul class="dep_list">
+                                        <li><a href="#a" role="button" class="dep_btn"><span>카테고리</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>주류</span></a></li>
+                                                <li><a href="#a" role="button"><span>화장품 & 향수</span></a></li>
+                                                <li><a href="#a" role="button"><span>쥬얼리 & 선물용품 </span></a></li>
+                                                <li><a href="#a" role="button"><span>건강제품류</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#a" role="button" class="dep_btn"><span>나의 주문</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>주문조회</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#a" role="button"><span>이벤트</span></a></li>
+                                        <li><a href="#a" role="button" class="dep_btn"><span>공지사항</span></a></li>
+                                        <li><a href="#a" role="button" class="dep_btn"><span>이용 안내</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>FAQ</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="event">
+                                    <ul class="dep_list">
+                                        <li><a href="#a" role="button"><span>이벤트</span></a></li>
+                                        <li><a href="#a" role="button"><span>쿠폰</span></a></li>
+                                    </ul>
+                                </div>
+                                <div id="Customer">
+                                    <ul class="dep_list">
+                                        <li><a href="#a" role="button" class="dep_btn"><span>고객센터</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>공지사항</span></a></li>
+                                                <li><a href="#a" role="button"><span>유실물 센터</span></a></li>
+                                                <li><a href="#a" role="button"><span>고객의 말씀</span></a></li>
+                                                <li><a href="#a" role="button"><span>제휴문의</span></a></li>
+                                                <li><a href="#a" role="button"><span>FAQ</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#a" role="button"><span>서식 자료실</span></a></li>
+                                        <li><a href="#a" role="button" class="dep_btn"><span>약관</span></a>
+                                            <ul class="dep_list2">
+                                                <li><a href="#a" role="button"><span>항공교통 이용자 서비스 계획</span></a></li>
+                                                <li><a href="#a" role="button"><span>피해구제 계획</span></a></li>
+                                                <li><a href="#a" role="button"><span>국내여객 운송약관</span></a></li>
+                                                <li><a href="#a" role="button"><span>국제여객 운송약관</span></a></li>
+                                                <li><a href="#a" role="button"><span>개인정보 처리방침</span></a></li>
+                                                <li><a href="#a" role="button"><span>홈페이지 이용약관</span></a></li>
+                                                <li><a href="#a" role="button"><span>위치정보 이용약관</span></a></li>
+                                                <li><a href="#a" role="button"><span>쿠키 사용 정책</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="alliance">
+                                    <ul class="dep_list">
+                                        <li><a href="#a" role="button"><span>여행</span></a></li>
+                                        <li><a href="#a" role="button"><span>레저</span></a></li>
+                                        <li><a href="#a" role="button"><span>금융</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="Reservation_inquiry">
+                        <form id="member_login2" method="post" name="loginform">
+                            <fieldset>
+                                <legend>로그인</legend>
+                                <div class="form">
+                                    <div class="form_layout">
+                                        <div class="form_label">
+                                            <label for="login_rent">예약 번호</label>
+                                        </div>
+                                        <div class="form_value">
+                                            <input type="text" id="login_rent"
+                                                placeholder="항공사 예약번호 입력(6자리, 예시: ABC1DF)">
+                                        </div>
+                                    </div>
+                                    <div class="form_layout">
+                                        <div class="form_label">
+                                            <label>탑승자 정보</label>
+                                        </div>
+                                        <div class="form_value passenger">
+                                            <input type="text" id="login_fn" placeholder="탑승자 성">
+                                            <span class="br"></span>
+                                            <input type="text" id="login_lm" placeholder="탑승자 이름">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="join_login">
+                            <a href="#a" class="join_login_btn" role="button"><span>확인</span></a>
+                        </div>
+                        <div class="join_txt">
+                            <p>예약정보를 입력하여 조회하실 수 있습니다.</p>
+                            <p>예약조회는 나의 예약>예약조회에서 예약번호 입력 후 확인하실 수 있습니다.</p>
+                            <p>일부 여행사에서 예약하신 경우 여정 변경 및 취소가 제한될 수 있습니다.</p>
+                            <p>예약번호 입력 후 승객 추가 버튼으로 탑승자 전체 이름을 입력하시면 일행 전체 체크인이 가능합니다.</p>
+                        </div>
+                        <div class="nonmember_login">
+                            <a href="#a"><span>비회원 로그인</span></a>
+                        </div>
+                        <div class="join_membership">
+                            <ul class="join_membership_list">
+                                <li><a href="#a"><span>회원가입</span></a></li>
+                                <li><a href="#a"><span>아이디 찾기</span></a></li>
+                                <li><a href="#a"><span>비밀번호 찾기</span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- 컨텐츠 끝 -->
+
+
+
+
+        <!-- 모달팝업 -->
+
+        <!-- 지역-언어선택 모달 -->
+        <div id="area_lge">
+            <div class="area_lge_inner">
+                <div class="area_tit">
+                    <h3>지역 - 언어선택</h3>
+                    <button class="area_tit_close area_close"></button>
+                </div>
+                <div class="area_cont">
+                    <div class="area_cont_top">
+                        <p class="ac_tit">
+                            <span>거주하시는</span>
+                            지역 및 언어를 선택하세요.
+                        </p>
+                        <span>(Select your Region and Language)</span>
+                    </div>
+                    <div class="area_cont_bot">
+                        <div class="Region_sel">
+                            <div class="lb">
+                                <label id="Region">거주지역(Region)</label>
+                            </div>
+                            <div class="sel_Region_list">
+                                <select name="Region_code" id="Region_code" title="거주지역선택">
+                                    <option selected="selected" value="KR">한국 (Korea)</option>
+                                    <option value="JP">日本 (Japan)</option>
+                                    <option value="CN">中国 (China)</option>
+                                    <option value="TH">ไทย (Thailand)</option>
+                                    <option value="LA">Laos (Laos)</option>
+                                    <option value="TW">台灣 (Taiwan)</option>
+                                    <option value="GU">Guam (Guam)</option>
+                                    <option value="MO">澳門 (Macao)</option>
+                                    <option value="VN">Việt Nam (Vietnam)</option>
+                                    <option value="MP">Saipan (Saipan)</option>
+                                    <option value="PH">Philippines (Philippines)</option>
+                                    <option value="HK">香港 (Hong Kong)</option>
+                                    <option value="RU">Россия (Russia)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="Language_sel">
+                            <div class="lb">
+                                <label id="Region2">언어(Language)</label>
+                            </div>
+                            <div class="sel_Region_list">
+                                <select name="Region_code2" id="Region_code2" title="거주지역선택">
+                                    <option selected="selected" value="KR">한국 (Korea)</option>
+                                    <option value="EN">English (English)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area_btm_close">
+                    <button class="area_bottom_close area_close">확인</button>
+                </div>
+            </div>
+        </div>
+        <!-- 지역-언어선택 모달 -->
+
+        <!-- 모달팝업 -->
+
+        <!-- 오른쪽 nav 메뉴 -->
+        <nav id="nav">
+            <div class="nav_inner">
+                <div class="nav_tit">
+                    <div class="nav_tit_inner">
+                        <div class="btn_inner">
+                            <button class="language_btn"><span>한국-한국어</span></button>
+                            <button class="nav_close"></button>
+                        </div>
+                        <div class="login_inner">
+                            <p>
+                                <span>로그인하시고</span>
+                                다양한 서비스를 이용하세요.
+                            </p>
+                            <a href="#a" class="login_btn">
+                                로그인
+                            </a>
+                        </div>
+                        <div class="search_inner">
+                            <label for="search"></label>
+                            <input id="search" title="검색어입력" type="text" placeholder="검색어를 입력하세요">
+                            <a href="#a" class="search_del hide" role="button">삭제버튼</a>
+                            <button class="search_btn"><span class="hide">검색버튼</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_cont">
+                    <div class="nav_cont_inner">
+                        <ul class="gnb_list">
+                            <li>
+                                <a href="#a" role="button"><span>항공권 예매</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>항공권 예매</span></a></li>
+                                    <li><a href="#a" role="button"><span>이벤트/프로모션</span></a></li>
+                                    <li><a href="#a" role="button"><span>운임 및 수수료 안내</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>나의 예약</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>예약 조회</span></a></li>
+                                    <li><a href="#a" role="button"><span>온라인 체크인</span></a></li>
+                                    <li><a href="#a" role="button"><span>부가서비스 추가 구매</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>서비스 안내</span></a>
+                                <ul class="dep_list">
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>여행준비</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>항공권 예매 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>단체 항공권 예매 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>온라인 체크인 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>가족동반여행</span></a></li>
+                                            <li><a href="#a" role="button"><span>도움이 필요한 고객</span></a></li>
+                                            <li><a href="#a" role="button"><span>혼자 여행하는 어린이</span></a></li>
+                                            <li><a href="#a" role="button"><span>t’pet(반려동물 동반 여행)</span></a></li>
+                                            <li><a href="#a" role="button"><span>t’way 라운지</span></a></li>
+                                            <li><a href="#a" role="button"><span>티웨이페이</span></a></li>
+                                            <li><a href="#a" role="button"><span>코로나 19 종합안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>항공편 및 공항정보</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>항공편 및 공항정보</span></a></li>
+                                            <li><a href="#a" role="button"><span>운항 스케줄 조회</span></a></li>
+                                            <li><a href="#a" role="button"><span>출도착 조회</span></a></li>
+                                            <li><a href="#a" role="button"><span>도심 공항 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>셀프 체크인 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>탑승 수속 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>공항 카운터 정보</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>부가서비스</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>부가서비스 번들</span></a></li>
+                                            <li><a href="#a" role="button"><span>프리미엄 좌석 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>수하물 추가 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>기내식 사전 주문</span></a></li>
+                                            <li><a href="#a" role="button"><span>결제시한연장 서비스</span></a></li>
+                                            <li><a href="#a" role="button"><span>옆좌석 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>펫 케이스/포장용 비닐 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>t'care 서비스</span></a></li>
+                                            <li><a href="#a" role="button"><span>원클릭 여행자보험</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>수하물 안내</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>무료 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>특수 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>운송 제한 물품</span></a></li>
+                                            <li><a href="#a" role="button"><span>수하물 배상</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>기내 서비스</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>무료 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>특수 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>운송 제한 물품</span></a></li>
+                                            <li><a href="#a" role="button"><span>수하물 배상</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>    
+                            <li>
+                                <a href="#a" role="button"><span>온라인면세점</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button" class="dep_btn"><span>카테고리</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>주류</span></a></li>
+                                            <li><a href="#a" role="button"><span>화장품 & 향수</span></a></li>
+                                            <li><a href="#a" role="button"><span>쥬얼리 & 선물용품 </span></a></li>
+                                            <li><a href="#a" role="button"><span>건강제품류</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>나의 주문</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>주문조회</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#a" role="button"><span>이벤트</span></a></li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>공지사항</span></a></li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>이용 안내</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>FAQ</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>이벤트</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>이벤트</span></a></li>
+                                    <li><a href="#a" role="button"><span>쿠폰</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>고객센터</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button" class="dep_btn"><span>고객센터</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>공지사항</span></a></li>
+                                            <li><a href="#a" role="button"><span>유실물 센터</span></a></li>
+                                            <li><a href="#a" role="button"><span>고객의 말씀</span></a></li>
+                                            <li><a href="#a" role="button"><span>제휴문의</span></a></li>
+                                            <li><a href="#a" role="button"><span>FAQ</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#a" role="button"><span>서식 자료실</span></a></li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>약관</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>항공교통 이용자 서비스 계획</span></a></li>
+                                            <li><a href="#a" role="button"><span>피해구제 계획</span></a></li>
+                                            <li><a href="#a" role="button"><span>국내여객 운송약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>국제여객 운송약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>개인정보 처리방침</span></a></li>
+                                            <li><a href="#a" role="button"><span>홈페이지 이용약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>위치정보 이용약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>쿠키 사용 정책</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>제휴</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>여행</span></a></li>
+                                    <li><a href="#a" role="button"><span>레저</span></a></li>
+                                    <li><a href="#a" role="button"><span>금융</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 오른쪽 nav 메뉴 -->
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="footer_top">
+                <div class="fot_top_cont1">
+                    <a href="#a" class="language_btn">
+                        <span>한국-한국어</span>
+                    </a>
+                </div>
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <span><img src="img/logo_footer.png" alt="푸터로고"></span>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <span>ⓒ 2019 t’way Air. All Rights Reserved.</span>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="more_btn">
+                    <span class="hide">
+                        푸터정보 더보기
+                    </span>
+                </div>
+                <div id="fot_b_info">
+                    <div class="fot_b_info_inner">
+                        <ul class="fot_list">
+                            <li><a href="#a"><span>항공교통 이용자서비스 계획</span></a></li>
+                            <li><a href="#a"><span>피해구제계획</span></a></li>
+                            <li><a href="#a"><span>홈페이지 이용약관</span></a></li>
+                            <li><a href="#a"><span>여객운송약관</span></a></li>
+                            <li><a href="#a"><span style="color: #d12c26;">개인정보 처리방침</span></a></li>
+                            <li><a href="#a"><span>위치정보 이용약관</span></a></li>
+
+                        </ul>
+                        <ul class="fot_info_con">
+                            <li><span><strong>사업자등록번호</strong>101-81-94800</span></li>
+                            <li><span><strong>통신판매업신고번호</strong>2017-서울강서-1292</span></li>
+                            <li><span><strong>주소</strong>서울시 강서구 하늘길 210 국제화물청사 3층</span></li>
+                            <li><span><strong>대표이사</strong>정흔근</span>
+                                <span class="gap"><strong>개인정보 관리책임자</strong>김형이</span>
+                            </li>
+                        </ul>
+                        <ul class="fot_call fot_call_inner">
+                            <li class="call">
+                                <span>예약센터</span>
+                                <a href="tel:1688-8686">1688 - 8686</a>
+                            </li>
+                            <li class="office_hours">
+                                <a href="#a">
+                                    <span>업무시간</span>
+                                    <span>07:00 ~ 19:00</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sns_list">
+                            <li><a href="#a"><span class="hide">페이스북</span></a></li>
+                            <li><a href="#a"><span class="hide">인스타</span></a></li>
+                            <li><a href="#a"><span class="hide">유튜브</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 푸터 -->
+
+    </div>
+    <!-- wrapper 끝 -->
+
+
+</body>
+
+</html>

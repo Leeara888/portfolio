@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tway</title>
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <!-- 슬릭슬라이더 -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- 초기화css -->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- 메인css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- jQuery js -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- 슬릭슬라이더 js -->
+    <script src="js/slick.min.js"></script>
+    <!-- 메인js -->
+    <script src="js/main.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- 탑버튼 -->
+        <a class="to_top_btn" href="#a"><span></span></a>
+
+        <!-- 헤더 -->
+        <header id="header">
+
+            <div class="gnb">
+                <div class="gnb_inner">
+                    <h1 class="logo hide">로고</h1>
+                    <div class="button">
+                        <button class="mypage" type="button" onclick="window.location.href='login.html'"><span
+                                class="hide">마이페이지</span></button>
+                        <button class="mo_nav_button"><span class="hide">더보기</span></button>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- 헤더 -->
+
+
+        <div id="container">
+            <!-- 컨텐츠 시작 -->
+
+            <!-- 왕복 편도 선택 -->
+            <div class="main_visual">
+                <div class="main_viual_inner">
+                    <div class="sel_booking">
+                        <ul class="sel_booking_list">
+                            <li><a href="#one_way"><span>왕복</span></a></li>
+                            <li><a href="#round_trip"><span>편도</span></a></li>
+                            <li class="trip_btn"><button type="button"
+                                    onclick="window.location.href='login.html'"><span>다구간</span></button></li>
+                        </ul>
+                        <div class="group_trip">
+                            <input id="group" type="checkbox">
+                            <label for="group"><span></span>단체(10명이상)</label>
+                        </div>
+                        <div id="one_way" class="ticket">
+                            <div class="Selectmenu_list">
+                                <div class="place">
+                                    <div class="place_inner">
+                                        <div class="trip_start">
+                                            <a href="#"></a>
+                                            <strong>출발지</strong>
+                                            <span>도시/공항</span>
+                                        </div>
+                                        <button class="reverse"></button>
+                                        <div class="trip_end">
+                                            <a href="#"></a>
+                                            <strong>도착지</strong>
+                                            <span>도시/공항</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <div class="date_inner">
+
+                                        <p class="hide">출발일</p>
+                                        <label for="start"></label>
+                                        <input type="date" id="start">
+                                        <span>-</span>
+                                        <p class="hide">출발일</p>
+                                        <label for="end"></label>
+                                        <input type="date" id="end">
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <div class="people_inner">
+                                        <div class="adult">
+                                            <label for="adult_num">성인</label>
+                                            <span class="select_box">
+                                                <select name="성인인원수 선택" id="adult_num">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="baby">
+                                            <label for="baby_num">소아</label>
+                                            <a class="age_popup" href="#a"><span class="hide">소아안내 팝업창</span></a>
+                                            <span class="select_box">
+                                                <select name="소아인원수 선택" id="baby_num">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="child">
+                                            <label for="child_num">유아</label>
+                                            <a class="age_popup" href="#a"><span class="hide">유아안내 팝업창</span></a>
+                                            <span class="select_box">
+                                                <select name="유아인원수 선택" id="child_num">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="age_calculator">
+                                    <a onclick="javascript:btn()" class="age_calculator_btn" href="#a">나이 계산기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="round_trip" class="ticket">
+                            <div class="Selectmenu_list">
+                                <div class="place">
+                                    <div class="place_inner">
+                                        <div class="trip_start">
+                                            <a href="#"></a>
+                                            <strong>출발지</strong>
+                                            <span>도시/공항</span>
+                                        </div>
+                                        <button class="reverse"></button>
+                                        <div class="trip_end">
+                                            <a href="#"></a>
+                                            <strong>도착지</strong>
+                                            <span>도시/공항</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <div class="date_inner">
+                                        <p class="hide">출발일</p>
+                                        <label for="start1"></label>
+                                        <input type="date" id="start1">
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <div class="people_inner">
+                                        <div class="adult">
+                                            <label for="adult_num">성인</label>
+                                            <span class="select_box">
+                                                <select name="성인인원수 선택" id="adult_num1">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="baby">
+                                            <label for="baby_num">소아</label>
+                                            <a class="age_popup" href="#a"><span class="hide">소아안내 팝업창</span></a>
+                                            <span class="select_box">
+                                                <select name="소아인원수 선택" id="baby_num2">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="child">
+                                            <label for="child_num">유아</label>
+                                            <a class="age_popup" href="#a"><span class="hide">유아안내 팝업창</span></a>
+                                            <span class="select_box">
+                                                <select name="유아인원수 선택" id="child_num3">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="age_calculator">
+                                    <a onclick="javascript:btn()" class="age_calculator_btn" href="#a">나이 계산기</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="reservation_inner">
+                    <div class="sale_code">
+                        <button class="sale_code_modal_btn">
+                        </button>
+                        <button class="btn_code"><span>할인코드</span></button>
+                    </div>
+                    <div class="reservation">
+                        <button class="reservation_btn">
+                            항공권 조회
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont1_slide_list">
+                <div class="cont1_slide_inner">
+                    <div id="event_slider" class="cont1_slider">
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide1.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>다모아 특가</p>
+                                    <span>항공권부터 숙소, 렌트카까지 다모아 할인!</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide2.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>무착륙 관광비행</p>
+                                    <span>면세점과 함께하는 무착륙 쇼핑</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide3.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>6월 무착륙 관광비행, 5만원 캐시백</p>
+                                    <span>6월 무착륙 관광비행, 5만원 캐시백</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide4.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>국내선 1만원 즉시 할인</p>
+                                    <span>국내선 1만원 즉시 할인</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide5.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>대구공항 탑승객 대상 이벤트</p>
+                                    <span>재래시장 5천원 상품권 제공</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide6.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>티웨이 타면 왓챠 10일 무료</p>
+                                    <span>왓챠 제휴 이벤트!</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cont1_slide">
+                            <a href="#a">
+                                <div class="cont1_img">
+                                    <img src="img/cont1_slide7.jpg" alt="첫번째 슬라이드">
+                                </div>
+                                <div class="cont1_txt">
+                                    <p>하이투자증권 이벤트</p>
+                                    <span>항주식계좌 개설만 해도 2만원 쿠폰 증정</span>
+
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="check_list">
+                <ul class="check_list_inner">
+                    <li><a href="#a"><span></span>
+                            <p>체크인</p>
+                        </a></li>
+                    <li><a href="#a"><span></span>
+                            <p>예약 조회</p>
+                        </a></li>
+                    <li><a href="#a"><span></span>
+                            <p>운항 스케줄</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="covid_notice">
+                <div class="covid_notice_bg">
+                    <a href="#a">
+                        <img src="img/covid_notice.png" alt="코비드_공지사항">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 제휴서비스 -->
+            <div class="associate_service">
+                <div class="associate_service_inner">
+                    <h2>제휴 서비스</h2>
+                    <div class="cont1_slide_list">
+                        <div class="cont1_slide_inner">
+                            <div id="servie_slider" class="cont1_slider">
+                                <div class="cont1_slide">
+                                    <a href="#a">
+                                        <div class="service_cont_img">
+                                            <img src="img/service_slide1.jpg" alt="첫번째슬라이드">
+                                        </div>
+                                        <div class="service_cont_txt">
+                                            <p>SK 렌터카</p>
+
+                                            <p>제주여행의 시작 <br>
+                                                No.1 제주도 여행의 시작과 끝</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cont1_slide">
+                                    <a href="#a">
+                                        <div class="service_cont_img">
+                                            <img src="img/service_slide2.jpg" alt="첫번째슬라이드">
+                                        </div>
+                                        <div class="service_cont_txt">
+                                            <p>제주렌트카</p>
+
+                                            <p>가장 가까운 렌터카(도보 3분 / 셔틀 1분) <br>
+                                                티웨이항공 회원 전 차종 최대 85% 할인</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cont1_slide">
+                                    <a href="#a">
+                                        <div class="service_cont_img">
+                                            <img src="img/service_slide3.jpg" alt="첫번째슬라이드">
+                                        </div>
+                                        <div class="service_cont_txt">
+                                            <p>에어비앤비</p>
+
+                                            <p>현지인들의 독특한 숙소를 예약하자!<br>
+                                                여행의 색다른 경험을 제공하는 Airbnb!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cont1_slide">
+                                    <a href="#a">
+                                        <div class="service_cont_img">
+                                            <img src="img/service_slide4.jpg" alt="첫번째슬라이드">
+                                        </div>
+                                        <div class="service_cont_txt">
+                                            <p>렌터카</p>
+
+                                            <p>160개국 900개 업체를 한눈에!<br>
+                                                최저가 보장으로 예약하자!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cont1_slide">
+                                    <a href="#a">
+                                        <div class="service_cont_img">
+                                            <img src="img/service_slide5.jpg" alt="첫번째슬라이드">
+                                        </div>
+                                        <div class="service_cont_txt">
+                                            <p>Booking.com</p>
+
+                                            <p>티웨이 모든 취항지의 숙소 <br>
+                                                예약 최저가로 진행하세요!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 제휴서비스 -->
+
+            <!-- 최저가여행 -->
+            <div class="lowest_price">
+                <div class="lowest_price_inner">
+                    <h2>최저가 여행</h2>
+                    <div class="lowest_price_list">
+                        <div id="price_slider">
+                            <div class="price_cont trip1">
+                                <a href="#a">
+                                    <div class="trip_info">
+                                        <p class="trip_stat">부산</p>
+                                        <p class="trip_end">양양</p>
+                                    </div>
+                                    <div class="trip_prcie">
+                                        <div class="trip_box">
+                                            <span>편도 총액</span>
+                                        </div>
+                                        <p>
+                                            KRW
+                                            <span>67,100~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="price_cont trip1">
+                                <a href="#a">
+                                    <div class="trip_info">
+                                        <p class="trip_stat">광주</p>
+                                        <p class="trip_end">양양</p>
+                                    </div>
+                                    <div class="trip_prcie">
+                                        <div class="trip_box">
+                                            <span>편도 총액</span>
+                                        </div>
+                                        <p>
+                                            KRW
+                                            <span>62,100~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="price_cont trip2">
+                                <a href="#a">
+                                    <div class="trip_info">
+                                        <p class="trip_stat">김포</p>
+                                        <p class="trip_end">제주</p>
+                                    </div>
+                                    <div class="trip_prcie">
+                                        <div class="trip_box">
+                                            <span>편도 총액</span>
+                                        </div>
+                                        <p>
+                                            KRW
+                                            <span>11,900~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="price_cont trip3">
+                                <a href="#a">
+                                    <div class="trip_info">
+                                        <p class="trip_stat">대구</p>
+                                        <p class="trip_end">제주</p>
+                                    </div>
+                                    <div class="trip_prcie">
+                                        <div class="trip_box">
+                                            <span>편도 총액</span>
+                                        </div>
+                                        <p>
+                                            KRW
+                                            <span>9,100~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="price_cont trip4">
+                                <a href="#a">
+                                    <div class="trip_info">
+                                        <p class="trip_stat">청주</p>
+                                        <p class="trip_end">제주</p>
+                                    </div>
+                                    <div class="trip_prcie">
+                                        <div class="trip_box">
+                                            <span>편도 총액</span>
+                                        </div>
+                                        <p>
+                                            KRW
+                                            <span>10,100~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 최저가여행 -->
+
+            <!-- 다양한서비스 -->
+            <div class="various_service">
+                <div class="various_service_inner">
+                    <h2>다양한 서비스</h2>
+                    <div class="various_service_list">
+                        <div id="various_slider">
+                            <div class="various_cont service1">
+                                <a href="#a">
+                                    <p>부가서비스 <br>번들</p>
+                                </a>
+                            </div>
+                            <div class="various_cont service2">
+                                <a href="#a">
+                                    <p>수하물 추가 <br>구매</p>
+                                </a>
+                            </div>
+                            <div class="various_cont service3">
+                                <a href="#a">
+                                    <p>프리미엄 좌석 <br>구매</p>
+                                </a>
+                            </div>
+                            <div class="various_cont service4">
+                                <a href="#a">
+                                    <p>기내식 사전 <br>주문</p>
+                                </a>
+                            </div>
+                            <div class="various_cont service5">
+                                <a href="#a">
+                                    <p>면세품 & <br>t'shop</p>
+                                </a>
+                            </div>
+                            <div class="various_cont service6">
+                                <a href="#a">
+                                    <p>원클릭<br>여행자 보험</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 다양한서비스 -->
+
+            <!-- 공지사항 -->
+            <div class="important_notice">
+                <div class="important_notice_inner">
+                    <div class="notice_icon">
+                        <span class="hide">공지사항아이콘</span>
+                    </div>
+                    <div class="notice_slider">
+                        <div>
+                            <a href="#a">
+                                [공지] (국내선)보호자 미동반 만 19세 미만 승객 온라인체크인 및 셀프체크인 이용 제한 안내
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#a">
+                                [공지] 국내선 신분증 미소지 승객 항공기 탑승불가 및 신분증 부정사용 처벌(금지) 안내
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#a">
+                                [공지] 한국 입국자 PCR 음성확인서 제출 대상 확대 (21.03.30 업데이트)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="notice_btn">
+                        <button class="pause"><span class="hide">정지버튼</span></button>
+                        <button class="play"><span class="hide">시작버튼</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- 공지사항 -->
+        </div><!-- 컨텐츠 끝 -->
+
+
+
+
+        <!-- 모달팝업 -->
+
+        <!-- 오픈 팝업 -->
+        <div id="open_modal">
+            <div class="open_modal_inner">
+                <div class="title_inner">
+                    <div class="title">공지사항</div>
+                    <button class="close_btn title_close">&times;</button>
+                </div>
+                <div class="cont">
+                    <p>모바일 해상도로 확인 부탁드립니다.~</p>
+                </div>
+                <div class="confirm">
+                    <button class="close_btn bottom_close">확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 오픈 팝업 -->
+
+
+        <!-- 소아,유아 모달팝업 -->
+        <div id="age_modal">
+            <div class="age_modal_inner">
+                <div class="title_inner">
+                    <div class="title">나이 기준 안내</div>
+                    <button class="close_btn title_close">&times;</button>
+                </div>
+                <div class="cont">
+                    <ul>
+                        <li class="cont_top">
+                            <div class="left_box baby_img">
+                                <span>유아</span>
+                            </div>
+                            <div class="right_box">
+                                <dl>
+                                    <dt>국내</dt>
+                                    <dd>생후 <i>7일</i>~만 2세 미만</dd>
+                                </dl>
+                                <dl>
+                                    <dt>국제</dt>
+                                    <dd>생후 <i>14일</i>~만 2세 미만</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="cont_bottom">
+                            <div class="left_box child_img">
+                                <span>소아</span>
+                            </div>
+                            <div class="right_box">
+                                <dl>
+                                    <dt>국내</dt>
+                                    <dd>만 2세~ <i> 13세</i>미만</dd>
+                                </dl>
+                                <dl>
+                                    <dt>국제</dt>
+                                    <dd>만 2세~ 12세 미만</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="notice">
+                        <span>탑승 수속 시 생년월일 확인 가능한 서류 지참 필수</span>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <button class="close_btn bottom_close">확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 소아,유아 모달팝업 -->
+
+        <!-- 할인코드 모달 -->
+        <div id="sale_code_modal">
+            <div class="sale_code_modal_inner">
+                <div class="sale_tit1">
+                    <div class="title">할인코드 란?</div>
+                    <button class="close_btn title_close">&times;</button>
+                </div>
+                <div class="sale_tit2">
+                    <p>티웨이항공 탑승고객을 대상으로 특정 기간 동안 추가 할인을 제공해 드리는 제도입니다.</p> <br><br>
+                    <p>예약 시 사전에 안내된 코드를 입력하시면, 할인가격이 적용된 항공편을 선택하실 수 있습니다.
+                    </p>
+                </div>
+                <div class="sale_tit3">
+                    <button class="close_btn bottom_close">닫기</button>
+                </div>
+            </div>
+        </div>
+        <!-- 할인코드 모달 -->
+
+        <!-- 지역-언어선택 모달 -->
+        <div id="area_lge">
+            <div class="area_lge_inner">
+                <div class="area_tit">
+                    <h3>지역 - 언어선택</h3>
+                    <button class="area_tit_close area_close"></button>
+                </div>
+                <div class="area_cont">
+                    <div class="area_cont_top">
+                        <p class="ac_tit">
+                            <span>거주하시는</span>
+                            지역 및 언어를 선택하세요.
+                        </p>
+                        <span>(Select your Region and Language)</span>
+                    </div>
+                    <div class="area_cont_bot">
+                        <div class="Region_sel">
+                            <div class="lb">
+                                <label id="Region">거주지역(Region)</label>
+                            </div>
+                            <div class="sel_Region_list">
+                                <select name="Region_code" id="Region_code" title="거주지역선택">
+                                    <option selected="selected" value="KR">한국 (Korea)</option>
+                                    <option value="JP">日本 (Japan)</option>
+                                    <option value="CN">中国 (China)</option>
+                                    <option value="TH">ไทย (Thailand)</option>
+                                    <option value="LA">Laos (Laos)</option>
+                                    <option value="TW">台灣 (Taiwan)</option>
+                                    <option value="GU">Guam (Guam)</option>
+                                    <option value="MO">澳門 (Macao)</option>
+                                    <option value="VN">Việt Nam (Vietnam)</option>
+                                    <option value="MP">Saipan (Saipan)</option>
+                                    <option value="PH">Philippines (Philippines)</option>
+                                    <option value="HK">香港 (Hong Kong)</option>
+                                    <option value="RU">Россия (Russia)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="Language_sel">
+                            <div class="lb">
+                                <label id="Region2">언어(Language)</label>
+                            </div>
+                            <div class="sel_Region_list">
+                                <select name="Region_code2" id="Region_code2" title="거주지역선택">
+                                    <option selected="selected" value="KR">한국 (Korea)</option>
+                                    <option value="EN">English (English)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area_btm_close">
+                    <button class="area_bottom_close area_close">확인</button>
+                </div>
+            </div>
+        </div>
+        <!-- 지역-언어선택 모달 -->
+
+        <!-- 모달팝업 -->
+
+        <!-- 오른쪽 nav 메뉴 -->
+        <nav id="nav">
+            <div class="nav_inner">
+                <div class="nav_tit">
+                    <div class="nav_tit_inner">
+                        <div class="btn_inner">
+                            <button class="language_btn"><span>한국-한국어</span></button>
+                            <button class="nav_close"></button>
+                        </div>
+                        <div class="login_inner">
+                            <p>
+                                <span>로그인하시고</span>
+                                다양한 서비스를 이용하세요.
+                            </p>
+                            <a href="#a" class="login_btn">
+                                로그인
+                            </a>
+                        </div>
+                        <div class="search_inner">
+                            <label for="search"></label>
+                            <input id="search" title="검색어입력" type="text" placeholder="검색어를 입력하세요">
+                            <a href="#a" class="search_del hide" role="button">삭제버튼</a>
+                            <button class="search_btn"><span class="hide">검색버튼</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_cont">
+                    <div class="nav_cont_inner">
+                        <ul class="gnb_list">
+                            <li>
+                                <a href="#a" role="button"><span>항공권 예매</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>항공권 예매</span></a></li>
+                                    <li><a href="#a" role="button"><span>이벤트/프로모션</span></a></li>
+                                    <li><a href="#a" role="button"><span>운임 및 수수료 안내</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>나의 예약</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>예약 조회</span></a></li>
+                                    <li><a href="#a" role="button"><span>온라인 체크인</span></a></li>
+                                    <li><a href="#a" role="button"><span>부가서비스 추가 구매</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>서비스 안내</span></a>
+                                <ul class="dep_list">
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>여행준비</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>항공권 예매 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>단체 항공권 예매 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>온라인 체크인 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>가족동반여행</span></a></li>
+                                            <li><a href="#a" role="button"><span>도움이 필요한 고객</span></a></li>
+                                            <li><a href="#a" role="button"><span>혼자 여행하는 어린이</span></a></li>
+                                            <li><a href="#a" role="button"><span>t’pet(반려동물 동반 여행)</span></a></li>
+                                            <li><a href="#a" role="button"><span>t’way 라운지</span></a></li>
+                                            <li><a href="#a" role="button"><span>티웨이페이</span></a></li>
+                                            <li><a href="#a" role="button"><span>코로나 19 종합안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>항공편 및 공항정보</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>항공편 및 공항정보</span></a></li>
+                                            <li><a href="#a" role="button"><span>운항 스케줄 조회</span></a></li>
+                                            <li><a href="#a" role="button"><span>출도착 조회</span></a></li>
+                                            <li><a href="#a" role="button"><span>도심 공항 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>셀프 체크인 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>탑승 수속 안내</span></a></li>
+                                            <li><a href="#a" role="button"><span>공항 카운터 정보</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>부가서비스</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>부가서비스 번들</span></a></li>
+                                            <li><a href="#a" role="button"><span>프리미엄 좌석 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>수하물 추가 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>기내식 사전 주문</span></a></li>
+                                            <li><a href="#a" role="button"><span>결제시한연장 서비스</span></a></li>
+                                            <li><a href="#a" role="button"><span>옆좌석 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>펫 케이스/포장용 비닐 구매</span></a></li>
+                                            <li><a href="#a" role="button"><span>t'care 서비스</span></a></li>
+                                            <li><a href="#a" role="button"><span>원클릭 여행자보험</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>수하물 안내</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>무료 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>특수 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>운송 제한 물품</span></a></li>
+                                            <li><a href="#a" role="button"><span>수하물 배상</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#a" role="button" class="dep_btn"><span>기내 서비스</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>무료 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>특수 수하물</span></a></li>
+                                            <li><a href="#a" role="button"><span>운송 제한 물품</span></a></li>
+                                            <li><a href="#a" role="button"><span>수하물 배상</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>   
+                            <li>
+                                <a href="#a" role="button"><span>온라인면세점</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button" class="dep_btn"><span>카테고리</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>주류</span></a></li>
+                                            <li><a href="#a" role="button"><span>화장품 & 향수</span></a></li>
+                                            <li><a href="#a" role="button"><span>쥬얼리 & 선물용품 </span></a></li>
+                                            <li><a href="#a" role="button"><span>건강제품류</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>나의 주문</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>주문조회</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#a" role="button"><span>이벤트</span></a></li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>공지사항</span></a></li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>이용 안내</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>FAQ</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>이벤트</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>이벤트</span></a></li>
+                                    <li><a href="#a" role="button"><span>쿠폰</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>고객센터</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button" class="dep_btn"><span>고객센터</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>공지사항</span></a></li>
+                                            <li><a href="#a" role="button"><span>유실물 센터</span></a></li>
+                                            <li><a href="#a" role="button"><span>고객의 말씀</span></a></li>
+                                            <li><a href="#a" role="button"><span>제휴문의</span></a></li>
+                                            <li><a href="#a" role="button"><span>FAQ</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#a" role="button"><span>서식 자료실</span></a></li>
+                                    <li><a href="#a" role="button" class="dep_btn"><span>약관</span></a>
+                                        <ul class="dep_list2">
+                                            <li><a href="#a" role="button"><span>항공교통 이용자 서비스 계획</span></a></li>
+                                            <li><a href="#a" role="button"><span>피해구제 계획</span></a></li>
+                                            <li><a href="#a" role="button"><span>국내여객 운송약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>국제여객 운송약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>개인정보 처리방침</span></a></li>
+                                            <li><a href="#a" role="button"><span>홈페이지 이용약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>위치정보 이용약관</span></a></li>
+                                            <li><a href="#a" role="button"><span>쿠키 사용 정책</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#a" role="button"><span>제휴</span></a>
+                                <ul class="dep_list">
+                                    <li><a href="#a" role="button"><span>여행</span></a></li>
+                                    <li><a href="#a" role="button"><span>레저</span></a></li>
+                                    <li><a href="#a" role="button"><span>금융</span></a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 오른쪽 nav 메뉴 -->
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="footer_top">
+                <div class="fot_top_cont1">
+                    <a href="#a" class="language_btn">
+                        <span>한국-한국어</span>
+                    </a>
+                </div>
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <span><img src="img/logo_footer.png" alt="푸터로고"></span>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <span>ⓒ 2019 t’way Air. All Rights Reserved.</span>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="more_btn">
+                    <span class="hide">
+                        푸터정보 더보기
+                    </span>
+                </div>
+                <div id="fot_b_info">
+                    <div class="fot_b_info_inner">
+                        <ul class="fot_list">
+                            <li><a href="#a"><span>항공교통 이용자서비스 계획</span></a></li>
+                            <li><a href="#a"><span>피해구제계획</span></a></li>
+                            <li><a href="#a"><span>홈페이지 이용약관</span></a></li>
+                            <li><a href="#a"><span>여객운송약관</span></a></li>
+                            <li><a href="#a"><span style="color: #d12c26;">개인정보 처리방침</span></a></li>
+                            <li><a href="#a"><span>위치정보 이용약관</span></a></li>
+
+                        </ul>
+                        <ul class="fot_info_con">
+                            <li><span><strong>사업자등록번호</strong>101-81-94800</span></li>
+                            <li><span><strong>통신판매업신고번호</strong>2017-서울강서-1292</span></li>
+                            <li><span><strong>주소</strong>서울시 강서구 하늘길 210 국제화물청사 3층</span></li>
+                            <li><span><strong>대표이사</strong>정흔근</span>
+                                <span class="gap"><strong>개인정보 관리책임자</strong>김형이</span>
+                            </li>
+                        </ul>
+                        <ul class="fot_call fot_call_inner">
+                            <li class="call">
+                                <span>예약센터</span>
+                                <a href="tel:1688-8686">1688 - 8686</a>
+                            </li>
+                            <li class="office_hours">
+                                <a href="#a">
+                                    <span>업무시간</span>
+                                    <span>07:00 ~ 19:00</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sns_list">
+                            <li><a href="#a"><span class="hide">페이스북</span></a></li>
+                            <li><a href="#a"><span class="hide">인스타</span></a></li>
+                            <li><a href="#a"><span class="hide">유튜브</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 푸터 -->
+
+    </div>
+    <!-- wrapper 끝 -->
+    <script>
+        function btn() { alert('노선과 출발일을 먼저 선택해주세요.'); }
+    </script>
+
+
+
+</body>
+
+</html>
